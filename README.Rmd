@@ -34,7 +34,7 @@ devtools::install_github("jonthegeek/mydesc")
 You should never reexport `dplyr::desc`. Here's why:
 
 ```{r example}
-df <- data.frame(x = 1:2)
-dplyr::arrange(df, dplyr::desc(x))
-dplyr::arrange(df, mydesc::desc(x))
+df <- data.frame(x = c("first", "second"))
+dplyr::arrange(df, dplyr::desc(x))$x[[1]]
+dplyr::arrange(df, mydesc::desc(x))$x[[1]]
 ```
