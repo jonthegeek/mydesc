@@ -10,10 +10,12 @@ This is a quick demo package to serve as a sort of reprex.
 
 ## Installation
 
-You can install the development version of mydesc like so:
+You can install the development version of mydesc from
+[GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("jonthegeek/mydesc")
 ```
 
 ## Example
